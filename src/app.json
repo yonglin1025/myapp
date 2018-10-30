@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/user/main",
+    "pages/HistoricalMotion/main",
+    "pages/DetailsComments/main",
+    "pages/detail/main",
+    "pages/past_detail/main",
+    "pages/welcome/main"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#F5F5F8",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#F55442",
+    "list": [{
+      "pagePath": "pages/index/main",
+      "text": "每日一怼",
+      "iconPath": "static/img/index.png",
+      "selectedIconPath": "static/img/index.png"
+    },{
+      "pagePath": "pages/HistoricalMotion/main",
+      "text": "往日对怼",
+      "iconPath": "static/img/rectangle.png",
+      "selectedIconPath": "static/img/rectangle.png"
+    },{
+      "pagePath": "pages/user/main",
+      "text": "我的对怼",
+      "iconPath": "static/img/user.png",
+      "selectedIconPath": "static/img/user.png"
+    }]
+  }
+}

@@ -1,0 +1,58 @@
+@charset "utf-8";
+$borderColor:#ddd; //边框颜色
+$mainColor:#f9533b; //主题颜色
+
+//父元素-水平居中（主轴是横向才生效）
+@mixin content_flex() {
+  display: flex;
+  justify-content: space-between;
+}
+
+// 上下左右居中
+@mixin center($width, $height, $bg:#fff, $radus:0) {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: $width;
+  height: $height;
+  transform: translate(-50%,-50%);
+  overflow: hidden;
+  padding: 25px;
+  background-color: $bg;
+  border-radius: $radus;
+  z-index: 9999;
+}
+// 背景
+@mixin background_cover($opcity,$bg:#000) {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: $bg;
+  opacity: $opcity;
+  z-index: 999;
+}
+// 多行文本溢出显示省略号
+@mixin MultipleLine ($line:3) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  overflow: hidden;
+}
+
+// 单行文本的溢出显示省略
+@mixin singLine() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 实现圆点
+@mixin circle($width, $bg) {
+  width: $width;
+  height: $width;
+  background: $bg;
+  border-radius: 50%;
+}

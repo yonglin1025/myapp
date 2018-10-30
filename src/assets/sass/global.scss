@@ -1,0 +1,89 @@
+@import "@/assets/sass/public.scss";
+
+body,
+html {
+  height: 100%;
+  background-color: $mainColor;
+}
+button{
+  padding: 0;
+}
+// 头部图片
+.indexTopImg {
+  width: 100%;
+}
+// 评论弹框
+.bounce_container {
+  @include center(80%, 240px);
+}
+// 绝对定位 <!-- 杠图标 -->
+.fixedIcon {
+  position: fixed;
+  right: 30rpx;
+  bottom: 30rpx;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  box-shadow: 0 0 4rpx 4rpx #ddd;
+  z-index: 998;
+  background: #fff;
+  img {
+    width: 160rpx;
+    height: 160rpx;
+  }
+}
+// 绝对定位 <!-- 头部标题 -->
+.topFixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+  width: 100%;
+  padding-bottom: 4px;
+  p {
+    padding: 30rpx;
+    padding-bottom: 0;
+  }
+}
+// 文本框和按钮
+.textareaSty {
+  margin-top: 8px;
+  padding: 24rpx;
+  border: 1px solid $borderColor;
+
+  textarea {
+    width: 100%;
+    font-size: 26rpx;
+    color: #706E71;
+  }
+}
+.submitBut {
+  background-color: #fdc62d;
+  width: 80%;
+  margin: 12px auto;
+}
+
+.votes {
+  display: inline-block;
+  margin-right: 10rpx;
+  font-size: 28rpx;
+  margin-left: 6rpx;
+
+  // 圆点
+  .circle {
+    display: inline-block;
+    @include circle(16rpx, blue);
+    vertical-align: middle;
+  }
+
+  .red {
+    @include circle(16rpx, red);
+  }
+}
+
+.line {
+  background-color: $mainColor;
+  height: 30rpx;
+}
+

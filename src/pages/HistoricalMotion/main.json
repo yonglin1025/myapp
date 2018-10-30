@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "往日对怼",
+  "usingComponents": {
+    "i-progress": "../../../static/progress/index"
+  }
+}

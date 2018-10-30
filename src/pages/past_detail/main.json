@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "历史一怼",
+  "enablePullDownRefresh":true,
+  "usingComponents": {
+    "i-progress": "../../../static/progress/index"
+  }
+}

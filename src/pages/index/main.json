@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "每日一怼",
+  "enablePullDownRefresh":true,
+  "usingComponents": {
+    "i-progress": "../../../static/progress/index",
+    "i-modal": "../../../static/modal/index",
+    "i-toast": "../../../static/toast/index"
+  }
+}
